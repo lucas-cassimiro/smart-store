@@ -9,7 +9,7 @@
     display: flex;
     background-color: #3877C9;
     width: 100%;
-    height: 3.125rem;
+    height: 1.70rem;
     color: #fff;
     align-items: center;
 }
@@ -30,6 +30,8 @@
     justify-content: flex-end;
     width: 40%;
     margin: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .topo-header-2 {
@@ -37,7 +39,7 @@
     justify-content: space-around;
     width: 100%;
     background-color: #313131;
-    height: 3.75rem;
+    height: 3.3rem;
     align-items: center;
 }
 
@@ -107,15 +109,17 @@
 
 .header-navegation {
     width: 100%;
+    height: 3rem;
     background-color: #313131;
+    border: 0.0625rem solid rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-menu {
     display: flex;
-    justify-content: space-evenly;
-    height: 3.75rem;
-    align-items: center;
-    border: 0.0625rem solid;
+    gap: 10rem;
 }
 
 a {
@@ -123,7 +127,7 @@ a {
 }
 
 .header-menu > li > a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -146,47 +150,191 @@ a {
     width: 100%;
 }
 
-.list-itens {
+#mostruario-card{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-}
-
-.list-itens .titulo-novidades{
-    width: 100%;
+    gap: 1rem;
     text-align: center;
-    font-weight: 400;
+    margin-top: -5rem;
 }
 
-.card {
+#mostruario-card h1{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.80rem;
+    margin-bottom: -0.2rem;
+}
+
+.card{
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+    width: 16.70rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
-    align-items:center;
-    width: 20rem;
-    color: white; 
-    margin-right: 1rem;
-    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.list-itens li img{
-    width: 20rem;
-    margin: 0;
+.card header{
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
 }
 
-#card1:hover{
-    border: 3px solid #93C1FD;
+#card-01 img{
+    height: 14rem;
 }
 
-#card2:hover{
-    border: 3px solid #93C1FD;
+#card-03 img{
+    height: 12rem;
+}
+
+.card img{
+    margin-top: 1rem;
+    height: 13rem;
 }
 
 
+.card footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+}
 
+.card footer h3{
+    font-weight: 500;
+    font-size: 1.7rem;
+}
 
+.card footer p{
+    font-weight: 300;
+}
 
+.card footer span{
+    color: #93C1FD;
+}
 
+.black-friday{
+    height: 33rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.black-friday h2{
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 1.0rem;
+}
 
+.card-black-friday header{
+    display: flex;
+    justify-content: center;
+}
 
+.black-friday img{
+    width: 83%;
+}
+
+#cards-black-friday{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.div-footer-article-01{
+    gap: 1rem;
+    display: flex;
+    margin-bottom: 0.70rem;
+}
+
+#sp-01{
+    color: white;
+    background-color: #D93A1E;
+    width: 3rem;
+    padding: 0.20rem;
+    border-radius: 0.20rem;
+    font-size: 0.80rem;
+    text-align: center;
+}
+
+#sp-02{
+    color: white;
+    background-color: #313131;
+    border-radius: 0.20rem;
+    width: 6rem;
+    padding: 0.20rem;
+    border-radius: 0.20rem;
+    font-size: 0.80rem;
+    text-align: center;
+}
+
+#small-02{
+    color: grey;
+    text-decoration: line-through;
+}
+
+#banner-whatsapp {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+#banner-whatsapp img{
+    width: 83%;
+}
+
+#footer{
+    margin-top: 3rem;
+    background-color: #DCDCDC;
+    padding: 2.5rem;
+    display: flex;
+    justify-content:space-around;
+    gap: 4rem;
+}
+
+#div_footer01 ul li{
+    margin-bottom: 2.8rem;
+    text-decoration: underline
+}
+
+#div_footer02{
+    flex-grow: 0.70;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#div_footer02 h4{
+    width: 100%;
+    text-decoration: underline
+}
+
+#div_footer02 ul{
+    margin-top: -1rem;
+    font-size: 0.70rem;
+}
+
+#div_footer02 ul li{
+    margin-bottom:1rem;
+}
+
+#div_footer03 ul li{
+    font-size: 0.70rem;
+}
+
+#div_footer04 div *{
+    width: 2rem;
+    margin-bottom: 2.8rem;
+}
+
+#div_footer04 h4{
+    margin-bottom: 1rem;
+}
