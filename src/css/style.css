@@ -1,8 +1,11 @@
-.container-header {
+#header {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    position: fixed;
+    z-index: 2;
+    position: relative;
 }
 
 .topo-header {
@@ -34,13 +37,17 @@
     font-weight: 600;
 }
 
+
 .topo-header-2 {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
     background-color: #313131;
-    height: 3.3rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
+    color: white;
+    text-align: center;
 }
 
 .localizacao {
@@ -56,19 +63,28 @@
     margin-right: 0.5rem;
 }
 
+.logo{
+    position: absolute;
+    left: 36rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+
 .logo {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #074291;
-    position: absolute;
     font-family: var(--font-logo-2);
     color: #fff;
     font-size: 2rem;
+    text-align: center;
 }
 
 .container-carrinho-login {
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
 }
 
 .carrinho {
@@ -105,7 +121,11 @@
     justify-content: center;
 }
 
-
+.header-menu li:hover a{
+    color: #1f76e9;
+    transition: 0.3s ease-in-out;
+    font-weight: 800;
+}
 
 .header-navegation {
     width: 100%;
@@ -117,46 +137,67 @@
     align-items: center;
 }
 
-.header-menu {
-    display: flex;
-    gap: 10rem;
-}
-
-a {
-    color: #FFFFFF;
-}
-
-.header-menu > li > a {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.carrossel {
-    position: relative;
-    height: 500px;
-}
-
-.banner {
-    position: absolute;
+.header-navegation ul{
     width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
 }
 
-.banner.selecionado {
-    opacity: 1;
-    z-index: 1;
+#categoria-iphone{
+    width: 100%;
+    display: flex;
+    height: 10rem;
+    padding: 2rem;
+    align-items: flex-end;
+    position: absolute;
+    top: 7.7rem;
+    background-color: white;
+    visibility: hidden;
+}
+
+.visible-class{
+    visibility: visible;
+}
+
+#categoria-iphone ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .banner img{
     width: 100%;
 }
 
+.container-barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.barra1,
+.barra2,
+.barra3,
+.barra4 {
+    width: 100px;
+    height: 11px;
+    background-color: #9E9E9EDE;
+    margin-bottom: 20px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
 #mostruario-card{
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     text-align: center;
-    margin-top: -5rem;
 }
 
 #mostruario-card h1{
@@ -293,16 +334,17 @@ a {
 
 #footer{
     margin-top: 3rem;
+    padding-top: 3rem;
     background-color: #DCDCDC;
-    padding: 2.5rem;
     display: flex;
     justify-content:space-around;
     gap: 4rem;
+    height: 20rem;
 }
 
 #div_footer01 ul li{
     margin-bottom: 2.8rem;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 #div_footer02{
@@ -314,7 +356,7 @@ a {
 
 #div_footer02 h4{
     width: 100%;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 #div_footer02 ul{
@@ -337,4 +379,36 @@ a {
 
 #div_footer04 h4{
     margin-bottom: 1rem;
+}
+
+@media(max-width:540px) {
+    .header-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+    }
+    .header-navegation{
+        position: absolute;
+        left: -0rem;
+        background-color: #474747;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        bottom: -12rem;
+        width: 100%;
+        transform: translateX(-100%);
+        padding: 1rem;
+        height: 13rem;
+        z-index: -1;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .localizacao{
+        display: none;
+    }
 }

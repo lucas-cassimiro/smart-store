@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="menu-dropdown.js" defer></script>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/variables.css">
     <link rel="stylesheet" href="src/css/responsivo.css">
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-    <header class="container-header">
+    <header id="header">
         <div class="topo-header">
             <div class="tittle-header">
                 <span>A melhor franquia de smartphones do <span class="brasil-yellow">Brasil</span></span>
@@ -34,6 +35,8 @@
                 <a href="#">Selecione uma localização</a>
 
             </div>
+
+            <span class="hamburger"><img src="src/img/Hamburger_icon_white.svg" alt=""></span>
 
             <h1 class="logo">Smart Store</h1>
 
@@ -66,31 +69,52 @@
 
         <nav class="header-navegation">
             <ul class="header-menu">
-                <li><a href="#">iPhone</a></li>
+                <li class="botao-iphone"><a href="#">iPhone</a></li>
                 <li><a href="#">Android</a></li>
                 <li><a href="#">Smartwatch</a></li>
                 <li><a href="#">Fones bluetooth</a></li>
                 <li><a href="#">Blackfriday</a></li>
             </ul>
         </nav>
+        <div id="categoria-iphone">
+            <ul>
+                <li><a href="#">Ver Todos</a></li>
+                <li><a href="#">iPhone SE</a></li>
+                <li><a href="#">iPhone XR</a></li>
+                <li><a href="#">iPhone 11</a></li>
+                <li><a href="#">iPhone 12</a></li>
+                <li><a href="#">iPhone 13</a></li>
+                <li><a href="#">iPhone 14</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-            
-      <section class="carrossel">
-            <picture class="banner selecionado">
-                <img src="/src/img/Banner iphone 14.png" alt="">
-            </picture>
-            
-            <picture class="banner">
-                <img src="/src/img/Samsung S22 Banner.png" alt="">
-            </picture>
-
-            <picture class="banner">
-                <img src="" alt="">
-            </picture>
-
+        <section class="carrossel">
+            <div class="banner selecionado">
+                <img src="/src/img/Banner iphone 14.png" alt="" class="banner-iphone-14">
+            </div>
         </section>
+
+
+        <div class="container-barra">
+            <a class="barra1">
+
+            </a>
+
+            <a class="barra2">
+
+            </a>
+
+            <a class="barra3">
+
+            </a>
+
+            <a class="barra4">
+
+            </a>
+        </div>
+
 
 
         <section id="mostruario-card">
@@ -125,15 +149,6 @@
                 </footer>
             </article>
 
-            <article id="card-03" class="card">
-                <header>
-                    <img id="img3" src="src/img/samsung-watch.png" alt="">
-                </header>
-                <footer>
-                    <h3>Mi Band 4</h3>
-                    <p>A partir de <span>R$199,99</span></p>
-                </footer>
-            </article>
         </section>
 
         <section class="black-friday">
